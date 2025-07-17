@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chọn File Chúc Mừng</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tự động chuyển hướng sang Phamthithanhha.html nếu truy cập index.html
+    window.onload = function() {
+      if (!window.location.hash) {
+        window.location.href = 'Phamthithanhha.html';
+      }
+    }
+  </script>
 </head>
 <body class="bg-gradient-to-br from-blue-100 via-pink-100 to-yellow-100 min-h-screen flex items-center justify-center">
   <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full text-center">
